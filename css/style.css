@@ -160,6 +160,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		div.pg-home {
     		padding-top: 150px;
     		margin: 0 auto;
+			max-width: 858px;
 		}
 
 		section {
