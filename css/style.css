@@ -31,15 +31,18 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		background-color: var(--background-color);
 		color: whitesmoke;
 		width:auto;
+		margin: 0;
 	}
 
 /*TOPO*/
 	header.topo{
-		background-color: black;
+		background-color: black; 
+		padding: 15px;
+		
 	}
 
 	.logo {
-		max-width: 100px;
+		max-width: 120px;
 	} 
 
 	figure {
@@ -62,6 +65,10 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		width: 100%;
 	 }
 
+	 .topo {
+		text-align: center;
+	}
+
 	.user1, .user2, .user3 {
 		border-style: solid;
 		border-color: rgb(46, 46, 46);
@@ -80,9 +87,13 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 	li {
 		display: inline-block;
-		margin: 4px;
+		margin: 10px;
 		width: 186px;
 	} 
+
+	li img {
+		border-radius: 2px;
+	}
 
 	.addPerfil figure {
 		margin-bottom: 40px;
@@ -95,6 +106,7 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		background-color: var(--background-color);
 		text-transform: uppercase;
 		border-style: solid;
+		padding: 5px;
 	}
 
 	footer {
@@ -102,14 +114,24 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
     	justify-content: center;
 	}
 
+	@media only screen and (min-width:425px) and (max-width:768px) {
+		
+		.topo {
+			text-align: center;
+		}
 
+		ul {
+			width: 550px;
+		}	
+	}
 
 	@media (min-width: 800px) {
 		
 		.user1, .user2, .user3 {
 			border-style: solid;
 			border-color: rgb(46, 46, 46);
-			width: 186px;
+			max-width: 186px;
+			border-radius: 4px;
 		}
 	
 		.user1:hover {
@@ -127,16 +149,21 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 		.user3:hover {
 			border-color: rgb(224, 219, 219);
 			border-style: solid;
-			border-width: 4px;
 		}
 		
 		.topo {
 			padding: 10px;
 			margin: 0;
+			text-align: start;
 		}
 
 		div.pg-home {
-			margin-top: 130px;
+    		padding-top: 150px;
+    		margin: 0 auto;
+		}
+
+		section {
+			max-width: 858px;
 		}
 
 		.logo {
@@ -158,10 +185,11 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 		ul {
 			display: flex;
+			align-items: center;
 		}
 	
 		li {
-			margin: 20px;
+			margin: 15px;
 			cursor: pointer;
 			position: relative;
 			text-align: center;
@@ -174,7 +202,8 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 	
 		li.addPerfil {
 			width: 186px;
-			margin-top: 65px;
+			margin-top: 60px;
+			margin-right: 0;
 		}
 
 		li.addPerfil h3 {
